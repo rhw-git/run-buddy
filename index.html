@@ -45,50 +45,51 @@
     </header>
 
     <!-- hero/jumbotron-->
-    <section>
-        <div>
+
+    <section class="hero">
+        <div class="hero-form">
             <!--titles of sign up form-->
             <h3>Get Started Today</h3>
             <p>Fill out this form and one of our trainers will schedule a consult.</p>
 
-            <!--add form element-->
-            <form>
+        <!--add form element-->
+        <form>
 
-                <!--add text boxes-->
-                <label for = "name">Enter full name:</label>
-                <input type="text" placeholder="Your Name" name="name" />
+            <!--add text boxes-->
+            <label for = "name">Enter full name:</label>
+            <input class="form-input" type="text" placeholder="Your Name" name="name" />
 
-                <label for="email">Enter email address:</label>
-                <input type="email" placeholder="Email Address" name="email" />
+            <label for="email">Enter email address:</label>
+            <input class="form-input" type="email" placeholder="Email Address" name="email" />
 
-                <label for="phone">Enter a telephone number:</label>
-                <input type="tel" placeholder="Phone Number" name="phone" />
+            <label for="phone">Enter a telephone number:</label>
+            <input class="form-input" type="tel" placeholder="Phone Number" name="phone" />
 
-                <!--add radio button-->
-                <p>
-                    Have you worked out with a trainer before
-                    <input type="radio" name="trainer-confirm" id="trainer-yes" /> 
-                    <label for="trainer-yes">Yes</label>
-                    <input type="radio" name="trainer-confirm" id="trainer-no" />
-                    <label for="trainer-no">No</label>              
-                </p>
+        <!--add radio button-->
+            <p>
+                 Have you worked out with a trainer before
+                <input type="radio" name="trainer-confirm" id="trainer-yes" /> 
+                <label for="trainer-yes">Yes</label>
+                <input type="radio" name="trainer-confirm" id="trainer-no" />
+                <label for="trainer-no">No</label>              
+            </p>
 
-                <!--add check box-->
-                <p>
-                    <label>
-                        acknowledge that I am at least 18 years of age.
-                    </label> 
-                    <input type="checkbox" name="confirm-age" id="checkbox" />
-                </p>
+            <!--add check box-->
+            <p>
+                <label>
+                    acknowledge that I am at least 18 years of age.
+                </label> 
+                <input type="checkbox" name="confirm-age" id="checkbox" />
+            </p>
                 
-                <!--add submit button-->
-                <p>
-                    <button type="submit">
-                        Get running!
-                    </button>
-                </p>
+            <!--add submit button-->
+            <p>
+                 <button type="submit">
+                    Get running!
+                </button>
+            </p>
                 
-            </form>
+        </form>
         </div>
     </section>
     <!--end of hero-->
