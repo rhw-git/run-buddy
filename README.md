@@ -9,7 +9,7 @@ A website that offers fitness training services.
 *HTML
 *CSS
 
-##Website 
+## Website 
 https://rhw-git.github.io/run-buddy/
 
 ## Contribution
