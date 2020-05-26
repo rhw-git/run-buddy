@@ -73,21 +73,35 @@ footer h2{
     height: 600px;
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items:flex-start;
 }
 
 .hero-cta {
-    display: inline-block;
+    width: 35%;
+    text-align: right;
+    margin:3.5%;
+    color: white;
+    font-size: 18px;
+    line-height: 1.3;
+}
+
+.hero-cta h2 {
+    font-style: italic;
+    font-size: 55px;
+    color: #fce138;
+
 }
 
 .hero-form{
+    width: 40%;
+    margin: 3.5%;
     background-color: #fce138;
     color: #024e76;
     padding: 20px;
-    width: 500px;
     border: solid 3px #024e76;
-    position: absolute;
-    bottom: -80px;
-    right: 140px;
 }
 
 .hero-form h3 {
