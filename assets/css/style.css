@@ -138,10 +138,7 @@ footer h2{
 
 /*what we do section starts here*/
 
-.steps{
-    background-color: #fce138;
-    padding: 30px 0;
-}
+
 .section-title{
     font-size: 55px;
     color: #024e76;
@@ -157,42 +154,12 @@ footer h2{
     border-color: #fce138;
 }
 
+
 .secondary-border{
     border-color: #39a6b2;
 }
 
-.steps {
-    display: flex;
-    flex-flow: column;
-}
-
-.steps div{
-    margin-bottom: 80px;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
-}
-
-.steps img{
-    width: 15%;
-    margin: 10px 0;
-}
- .steps h3{
-    color: #024e76;
-    font-size: 46px;
-    margin-top: 10px;
- }
-
- .steps p{
-    color: #39a6b2;
-    font-size: 23px;
- }
-
- .steps span{
-     font-size: 38px;
- }
-
- .flex-row {
+.flex-row {
     display: flex;
     justify-content: center;
 }
@@ -200,7 +167,66 @@ footer h2{
 .intro p {
     text-align: center;
 }
-/*what you do section  end*/
+
+/*what you do section starts*/
+
+.steps{
+    background-color: #fce138;
+    padding: 30px 0;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+}
+
+.step {
+    margin:50px auto;
+    padding-bottom: 50px;
+    width: 80%;
+    border-bottom: 1px solid #39a6b2;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.step h3{
+    color: #024e76;
+    font-size: 46px;
+    flex: 1 30%;
+ }
+ 
+.step-info{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex: 2 70%;
+}
+
+.step-img{
+    flex:1 12%;
+    margin-right: 20px;
+}
+
+.step-img img{
+    max-width: 100%;
+}
+
+.step-text{
+    flex: 12;
+}
+
+.step-text h4{
+    font-size: 26px;
+    line-height: 1.5;
+    color: #024e76;
+}
+ .step-text p{
+    color: #39a6b2;
+    font-size: 18px;
+ }
+
+
+/*what you do section end*/
 
 /*your trainer section starts*/
 .trainers {
