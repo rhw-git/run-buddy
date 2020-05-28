@@ -1,6 +1,13 @@
+/*declare global variables*/
+:root{
+    --primary-color: #fce138;
+    --secondary-color: #024e76;
+    --tertiary-color: #39a6b2;
+}
+
 /* css code for run buddy*/
 body {
-    color: #39a6b2;
+    color: var(--tertiary-color);
     font-family: Helvetica, Arial, sans-serif;  
 }
 
@@ -14,7 +21,7 @@ body {
 /* apply this styles to <header> */
 header {
     padding: 20px 35px;
-    background-color: #39a6b2;
+    background-color: var(--tertiary-color);
     background-image: url("../image/hero-bg.jpg");
     background-size: cover;
     background-position: 80%;
@@ -30,14 +37,14 @@ header {
 header h1 {
     font-weight: bold;
     font-size: 36px;
-    color: #fce138;
+    color: var(--primary-color);
     margin: 0;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
 header a {
     text-decoration: none;
-    color: #fce138;
+    color: var(--primary-color);
 }
 
 header nav {
@@ -60,15 +67,15 @@ header nav ul li a{
 }
 
 header nav ul li a:hover{
-    background: #fce138;
-    color: #024e76;
+    background: var(--primary-color);
+    color: var(--secondary-color);
     border-radius: 15px;
     text-shadow: none;
 }
 
 /* apply this style to footer */
 footer {
-    background: #fce138;
+    background: var(--primary-color);
     width: 100%;
     padding: 40px 35px;
     display: flex;
@@ -77,7 +84,7 @@ footer {
 }
 
 footer h2{
-    color: #024e76;
+    color: var(--secondary-color);
     font-size: 30px;
     margin: 0;
 }
@@ -107,7 +114,7 @@ footer h2{
 .hero-cta h2 {
     font-style: italic;
     font-size: 55px;
-    color: #fce138;
+    color: var(--primary-color);
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
 }
 
@@ -115,9 +122,9 @@ footer h2{
     width: 40%;
     margin: 3.5%;
     background-color: rgba(252,225,56, 0.80);
-    color: #024e76;
+    color: var(--secondary-color);
     padding: 20px;
-    border: solid 3px #024e76;
+    border: solid 3px var(--secondary-color);
     border-radius: 15px;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
@@ -167,7 +174,7 @@ footer h2{
     height: 20px;
     width: 20px;
     background: rgba(255,255,255, 0.75);
-    border: 1px solid #024e76;
+    border: 1px solid var(--secondary-color);
     border-radius: 50%;
     position: absolute;
     top: -4px;
@@ -179,8 +186,8 @@ footer h2{
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #024e76;
-    background-image: radial-gradient(circle, #39a6b2, #024e76);
+    background: var(--secondary-color);
+    background-image: radial-gradient(circle, var(--tertiary-color), var(--secondary-color));
     position: absolute;
     left: -29px;
     top: -3px;
@@ -190,8 +197,8 @@ footer h2{
     content: "";
     height: 6px;
     width: 14px;
-    border-left: 2px solid #024e76;
-    border-bottom: 2px solid #024e76;
+    border-left: 2px solid var(--secondary-color);
+    border-bottom: 2px solid var(--secondary-color);
     position: absolute;
     left: -26px;
     top: 1px;
@@ -211,12 +218,12 @@ footer h2{
 }
 
 .form-input {
-    border: 1px solid #024e76;
+    border: 1px solid var(--secondary-color);
     border-radius: 10px;
     display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color: #024e76;
+    color: var(--secondary-color);
     width: 100%;
     margin-bottom: 15px;
     background-color: rgba(255,255,255, 0.75);
@@ -232,8 +239,8 @@ footer h2{
 }
 
 .hero-form button {
-    background-color: #024e76;
-    color: #fce138;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
     border: none;
     border-radius: 10px;
     padding: 10px 20px;
@@ -248,7 +255,7 @@ footer h2{
 /*what we do section starts here*/
 .section-title{
     font-size: 48px;
-    color: #024e76;
+    color: var(--secondary-color);
     display: inline-block;
     border-bottom: 3px solid;
     padding: 20px;
@@ -258,12 +265,12 @@ footer h2{
 }
 
 .primary-border{
-    border-color: #fce138;
+    border-color: var(--primary-color);
 }
 
 
 .secondary-border{
-    border-color: #39a6b2;
+    border-color: var(--tertiary-color);
 }
 
 .flex-row {
@@ -279,7 +286,7 @@ footer h2{
 /*what you do section starts*/
 
 .steps{
-    background-color: #fce138;
+    background-color: var(--primary-color);
     padding: 30px 0;
     display: flex;
     flex-flow: column;
@@ -294,7 +301,7 @@ footer h2{
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    border-bottom: 1px solid #39a6b2;
+    border-bottom: 1px solid var(--tertiary-color);
 }
 
 .step:last-child {
@@ -302,7 +309,7 @@ footer h2{
 }
 
 .step h3{
-    color: #024e76;
+    color: var(--secondary-color);
     font-size: 46px;
     flex: 1 30%;
  }
@@ -330,10 +337,10 @@ footer h2{
 .step-text h4{
     font-size: 26px;
     line-height: 1.5;
-    color: #024e76;
+    color: var(--secondary-color);
 }
 .step-text p{
-    color: #39a6b2;
+    color: var(--tertiary-color);
     font-size: 18px;
 }
 /*what you do section end*/
@@ -349,8 +356,8 @@ footer h2{
 
 .trainer {
     margin: 20px;
-    background: #024e76;
-    color: #fce138;
+    background: var(--secondary-color);
+    color: var(--primary-color);
     flex: 1
 }
 
@@ -389,7 +396,7 @@ footer h2{
 /* reach section starts here*/
 .contact {
     text-align: left;
-    background-color: #024e76;
+    background-color: var(--secondary-color);
     
 }
 
@@ -405,12 +412,12 @@ footer h2{
 }
 
 .contact-form input, .contact-form textarea {
-    border: 1px solid #024e76;
+    border: 1px solid var(--secondary-color);
     border-radius: 10px;
     display: block;
     padding: 7px 15px;
     font-size: 16px;
-    color: #024e76;
+    color: var(--secondary-color);
     width: 100%;
     margin-bottom: 15px;
     margin-top: 5px;
@@ -426,20 +433,20 @@ footer h2{
     width: 100%;
     border: none;
     border-radius: 10px;
-    background: #fce138;
-    color: #024e76;
+    background: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center;
     padding: 15px 0;
     font-size: 16px;
 }
 
 .contact-form button:hover{
-    color: #fce138;
+    color: var(--primary-color);
     background: #3916b2;
 }
 
 .contact h2 {
-    color: #fce138;
+    color: var(--primary-color);
 }
 
 .contact-info iframe {
@@ -447,7 +454,7 @@ footer h2{
 }
 
 .contact-info h3 {
-    color: #fce138;
+    color: var(--primary-color);
     font-size: 32px;
 }
 
@@ -459,7 +466,7 @@ footer h2{
 }
 
 .contact-info a{
-    color: #fce138;
+    color: var(--primary-color);
 }
 
 .contact-info div {
@@ -475,13 +482,13 @@ footer div {
 }
 
 footer a {
-    color: #024e76;
+    color: var(--secondary-color);
 }
 /* footer ends here*/
 
 /* service plan section starts here*/
 .services {
-   background-color: #fce138;
+   background-color: var(--primary-color);
    display: flex;
    justify-content: center;
    flex-flow: wrap;
@@ -500,14 +507,14 @@ footer a {
     display: grid;
     grid-template-columns: 1fr repeat(2, 4fr);
     grid-template-rows: repeat(5, 1fr) 2fr;
-    border: 1px solid #024e76;
-    color: #024e76;
+    border: 1px solid var(--secondary-color);
+    color: var(--secondary-color);
     font-size: 18px;
 }
 
 .service-grid-item{
     padding: 15px 0;
-    border: 2px solid #024e76;
+    border: 2px solid var(--secondary-color);
     display: flex;
     align-items: center;
     justify-content: center;
